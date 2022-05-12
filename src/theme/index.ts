@@ -1,3 +1,5 @@
+import { getBottomSpace, getStatusBarHeight } from "react-native-iphone-x-helper"
+
 export const theme = {
   colors: {
     brand: '#8257E5',
@@ -16,5 +18,10 @@ export const theme = {
   fonts: {
     regular: 'Inter_400Regular',
     medium: 'Inter_500Medium',
+  },
+
+  spaces: {
+    bottomSpace: getBottomSpace(),
+    statusBarHeight: getStatusBarHeight(),
   }
 };
